@@ -6,9 +6,12 @@ const cookieParser = require('cookie-parser');
 const bodyParser   = require('body-parser');
 const layouts      = require('express-ejs-layouts');
 const mongoose     = require('mongoose');
+require("dotenv");
 
+// mongoose.connect('mongodb://localhost/organicbox');  ya cambiamos // Base de datos en la nube
+mongoose.connect(process.env.DATABASE_URL)
+  .then(console.log("Connected!!!"))
 
-mongoose.connect('mongodb://localhost/organicbox');
 
 const app = express();
 
@@ -17,7 +20,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'My Veggie Box';
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
