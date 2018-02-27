@@ -15,7 +15,11 @@ mongoose.connect(process.env.DATABASE_URL)
 
   const index = require('./routes/index')
   const users = require('./routes/users')
-  const authRoutes = require('./routes/auth')
+
+  //importación de la ruta
+const authRoutes = require('./routes/auth')
+
+
 const app = express();
 
 // view engine setup
