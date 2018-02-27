@@ -7,9 +7,9 @@ const bodyParser   = require('body-parser');
 const layouts      = require('express-ejs-layouts');
 const mongoose     = require('mongoose');
 require("dotenv");
-
+mongoose.Promise = global.Promise;
 // mongoose.connect('mongodb://localhost/organicbox');  ya cambiamos // Base de datos en la nube
-mongoose.connect(process.env.DATABASE_URL)
+mongoose.connect('mongodb://organicbox:andrea+dimitri=BETTER@ds111496.mlab.com:11496/organicbox')
   .then(console.log("Connected!!!"))
 
 
