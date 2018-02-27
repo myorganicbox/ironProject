@@ -3,8 +3,8 @@ const Schema = mongoose.Schema;
 
 
 const mealSchema = new Schema({
-    name: {type: String, required: true },
-    Description: {type: String, required: true},
+    name: {type: String},
+    description: {type: String},
     image: {type: String}
 });
 

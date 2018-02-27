@@ -8,7 +8,8 @@ category: {type: String, enum: TYPES},
 quantity: {type: Number}, // in Mongoose : agregar un MIN y un MAX
 price: {type:Number},
 name: {type : String},
-image: {type: String,  default:"http://"}
+image: {type: String,  default:"http://"},
+description: {type: String}
 
 });
 
