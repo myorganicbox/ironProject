@@ -13,6 +13,9 @@ mongoose.connect(process.env.DATABASE_URL)
   .then(console.log("Connected!!!"))
 
 
+  const index = require('./routes/index')
+  const users = require('./routes/users')
+  const authRoutes = require('./routes/auth')
 const app = express();
 
 // view engine setup
