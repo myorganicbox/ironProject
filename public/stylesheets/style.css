@@ -1,5 +1,6 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inconsolata', monospace;
+  
 }
 
 a {
@@ -9,16 +10,15 @@ a {
 .navbarlayout{
  padding-left: 400px;
  background-color: aliceblue;
-}
-
-.layoutLoginButton{
-  padding: 20px;
+ height: 100px;
+ font-size: 1.5em;
 }
 
 #layoutlogo{
   display: inline-flex;
   height: 100px;
   width: 100px;
+  
   
 }
 
@@ -64,4 +64,26 @@ height: 450px;
   margin-top: 10px;
   border-radius: 10px;
   background-color:rgba(139, 145, 110);
+}
+
+#logohomepage{
+ position:absolute;
+  left: -320px;
+  top: -35px;  
+}
+
+.navbarlayout{
+
+  padding-top:40px;  
+}
+
+.buttonslayout{
+
+  display: flex;
+  padding-left: 600px;
+  margin-top: -50px;
+}
+
+.page-footer{
+  background-color: rgb(250, 208, 91)
 }

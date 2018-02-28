@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title><%= title %></title>
-    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" 
+    rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -15,9 +19,12 @@
 
      
     <div class="navbarlayout">
-        
+       
     <nav class="navbar navbar-expand-lg navbar-light bg-aliceblue">
+
+        <a href="/"><img id="logohomepage" width="100px" height="100px" src="../images/logoveggiebox.png" alt=""></a>
    
+        <div class="linkslayout">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,6 +41,9 @@
             <a class="nav-link disabled" href="/aboutus">About Us</a>
           </li>
         </ul>
+
+      </div>    
+      <div class="buttonslayout">         
         <a href="/login">
           <button class="btn btn-outline-success" href="/login" type="login">Login</button>
         </a>
@@ -41,10 +51,10 @@
         <a href="/signup">
           <button class="btn btn-outline-success" href="/signup" type="Singup">Sign up</button>
         </a>
-          
-          
 
-      
+      </div> 
+
+  
         
       </div>
     </nav>
@@ -53,9 +63,82 @@
     </div>
     <%- body %>
 <hr>
-    <footer>
+    
+   <!--Footer-->
+   <footer class="page-footer">
       
-    </footer>
+      <!--Footer Links-->
+      <div class="containerfooter">
+  
+          
+          <div class="row pt-10 mb-10 text-center d-flex justify-content-center">
+  
+              
+              <div class="colayout">
+                  <h6 class="title font-weight-bold"><a href="/Aboutus">About us</a></h6><hr>
+              </div>
+              
+              <div class="colayout">
+                  <h6 class="title font-weight-bold"><a href="/Contactus">Contact Us</a></h6> <hr>
+              </div>
+             
+              <div class="colayout">
+                  <h6 class="title font-weight-bold"><a href="/publicmeals">Boxes</a></h6><hr>
+              </div>
+            
+  
+          </div>
+          
+  
+          <hr class="rgba-white-light" style="margin: 0 15%;">
+  
+       
+          <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+  
+             
+              <div class="col-md-8 col-12 mt-5">
+                  <p style="line-height: 1.7rem">Y el tomate también ya tiene sentimientos, aunque no los exprese, y la lechuga también tiene sentimientos, aunque no lo parezca.</p>
+  
+              </div>
+             
+  
+          </div>
+         
+          
+  
+          <!--Grid row-->
+          <div class="row pb-3">
+  
+              <!--Grid column-->
+              <div class="col-md-12">
+  
+                  <div class="mb-5 flex-center">
+                      <!--Facebook-->
+                      <a class="fb-ic" href="https://www.facebook.com/My-veggie-box-217902758766330/?ref=your_pages"><i class="fab fa-facebook-square" ></i></i></a>
+                        
+                      <!--Twitter-->
+                      <a class="tw-ic"><i class="fab fa-twitter"></i></a>
+
+                      <!--Instagram-->
+                      <a class="ins-ic" href="https://www.instagram.com/miveggiebox/"><i class="fab fa-instagram" ></i></a>
+                      
+                  </div>
+              </div>
+         
+          </div>
+
+      </div>
+  
+      <div class="footer-copyright py-3 text-center">
+          <div class="container-fluid">
+              © 2018 Made with love by Dimitri & Andrea
+          </div>
+      </div>
+      
+  
+  </footer>
+     
+                      
 
   </body>
   <script src="/javascripts/main.js"></script>
