@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:3000/organicbox");
+mongoose.connect("mongodb://localhost/organicbox");
 const Basket = require("./models/Basket");
 const TYPES = require ('./models/Basket-types');
-const Meal= require("'./models/Meal");
+const Meal= require("./models/Meal");
 
 const baskets=[
 {
@@ -56,9 +56,15 @@ const baskets=[
 
     ];
 
+
+    Basket.create(baskets, function(err, result){
+        if(err) console.log("no guardado");
+        console.log("lo lograste!", result);
+    });
+
 const meals = [
     {
-    name: "Smoky Chickpeas & Quinoa",
+    name: "Smoky Chickpeas & Quinua",
     description: "Chickpeas in a smoky, mildly spiced tomato sauce, with quinoa and garnished with fresh coriander." ,
     image: ["https://cdn.shopify.com/s/files/1/1044/2600/products/IMG_2622_grande.jpg?v=1519550570"]
     },
@@ -99,3 +105,8 @@ const meals = [
       },
         
 ]
+
+Meal.create(meals, function(err, result){
+    if(err) console.log("no guardado");
+    console.log("lo lograste!", result);
+});

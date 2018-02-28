@@ -13,9 +13,10 @@ require("dotenv");
 mongoose.Promise = global.Promise;
 
 
-// mongoose.connect('mongodb://localhost/organicbox');  ya cambiamos // Base de datos en la nube
-mongoose.connect('mongodb://organicbox:andrea+dimitri=BETTER@ds111496.mlab.com:11496/organicbox')
-  .then(console.log("Connected!!!"))
+mongoose.connect('mongodb://localhost/organicbox')
+.then(console.log("Connected!!!"))
+//ya cambiamos // Base de datos en la nube
+//mongoose.connect('mongodb://organicbox:andrea+dimitri=BETTER@ds111496.mlab.com:11496/organicbox')
 
 
 // view engine setup
