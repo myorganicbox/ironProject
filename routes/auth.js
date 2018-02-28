@@ -29,7 +29,7 @@ router.post("/login", passport.authenticate("local", {
     failureRedirect: "/login",
     failureFlash: true,   
     passReqToCallback: true,
-    successRedirect: "/private-meal-page", 
+    successRedirect: "/privateMeals", 
   }));
 
 
@@ -78,10 +78,6 @@ console.log(newUser)
     });
 });
 
-// Private Meal Page access
-router.get("/private-meal-page", ensureLogin.ensureLoggedIn(), (req, res) => {
-    res.render("privateMeal", { user: req.user });
-  });
 
 
 
