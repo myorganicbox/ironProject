@@ -15,3 +15,9 @@
 .meal img{
     width: 100%;
 }
+
+
+#meal-name{
+    font-weight: bold;
+    text-align: center;
+}

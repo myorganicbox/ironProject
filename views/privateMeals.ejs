@@ -27,7 +27,20 @@ Como agregar el historical de pedido del usario ? como jquery en el html, y que 
     </aside>
     <!-- End Price -->
 
-<!-- 
+
+    <div class="meal-container">
+      <% meals.forEach(function(meal){%>
+        <div class="meal">
+          <p id="meal-name"><%=meal.name%></p>
+          
+          <img src = <%=meal.image%>>
+          <p><%=meal.description%></p>
+        </div>
+      <%})%>
+      </div>
+      <br>
+      <br>
+
 <div class="card-columns">
   <div class="card">
     <img class="card-img-top" src="..." alt="Card image cap">
@@ -91,13 +104,4 @@ Como agregar el historical de pedido del usario ? como jquery en el html, y que 
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-</div> -->
-<div class="meal-container">
-<% meals.forEach(function(meal){%>
-  <div class="meal">
-    <p><%=meal.name%></p>
-    <p><%=meal.description%></p>
-    <img src = <%=meal.image%>>
-  </div>
-<%})%>
 </div>
