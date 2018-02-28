@@ -14,3 +14,14 @@ a {
   height: 120px;
   width: 120px;
 }
+
+h1{
+  padding-left: 500px;
+  padding-bottom: 30px;
+  padding-top:30px;
+}
+
+.card{
+  display: inline-block;
+padding: 70px;
+}
