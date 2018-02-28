@@ -1,3 +1,4 @@
+/* ----- Super effect Top Shadow ---- */
 body:before {
     content: "";
     position: fixed;
@@ -12,23 +13,34 @@ body:before {
 
     z-index: 100;
 }
+/* --- END ---  Super effect Top Shadow --- END --- */
 
-.card-columns{
-    display: inline-block;
+
+
+
+.meal-price{
+    position: absolute;
+    right: 40px;
+    top: 250px;
+    padding: 25px;
+    border: 1px rgba(112, 128, 144, 0.1) solid;
+    border-radius: 5%;
+    background-color: #FF9D76;
+
 }
 
+
+
+/* ----- Meal Container CSS ---- */
 .meal-container{
     display: flex;
     flex-wrap: wrap;
 }
 
+
 .meal{
-    width: 25%;
-    padding: 10px;
-    margin: 2px;
-    border: 1px rgba(112, 128, 144, 0.1) solid;
-    border-radius: 5%;
-    background-color: #F8F9FA;
+    width: 100%;
+    padding: 10px;  
 }
 
 
@@ -45,10 +57,72 @@ body:before {
 #meal-description{
     text-align: justify;
 }
+/* --- END --- Meal Container CSS --- END --- */
 
-.meal-price{
-        position: absolute;
-        right: 100px;
-        top: 250px;
+
+
+
+
+
+
+
+
+.card-select {
+    text-align: center;
+    transition: all 0.5s ease;
+    width: 25%;
+    opacity:0.6;
+    margin: 2px;
+    border: 1px rgba(112, 128, 144, 0.1) solid;
+    border-radius: 5%;
+    background-color: #F8F9FA;
+  }
+  
+  /* .card-select .card-divider {
+    background-color: #fefefe;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid #cacaca;
+  } */
+  
+  .card-select .button {
+    padding: 1rem;
+    background-color: #cacaca;
+  }
+  
+  .card-select .button:after {
+    content: 'Select';
     
-}
+  }
+  
+  .card-select .button:hover {
+    background-color: #1779ba;
+  }
+  
+  .card-select .button:focus {
+    background-color: #1779ba;
+  }
+  
+  .card-select.is-selected {
+    border: 1px solid #1779ba;
+    box-shadow: 0 0 10px #e6e6e6;
+    transition: all 0.5s ease;
+    opacity: 1;
+    background-color: #F8F9FA;
+  }
+  
+  .card-select.is-selected .button {
+    background-color: #1779ba;
+  }
+  
+  .card-select.is-selected .button:after {
+    content: 'Selected';
+  }
+  
+
+
+
+  /*  // bootstrap .card-columns{
+    display: inline-block;
+} */

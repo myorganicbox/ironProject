@@ -1,14 +1,14 @@
 
 <h2>Private Meals page</h2>
 
-Como agregar el historical de pedido del usario ? como jquery en el html, y que sea diseñado.
+Agregar el historical de pedido del usario !!!
 
 
-<% if (user) { %>
+<!-- <% if (user) { %>
   <div>
     <a href="/">Index</a>
   </div>
-<% } %>
+<% } %> -->
 
 
     <!-- Price -->
@@ -23,23 +23,48 @@ Como agregar el historical de pedido del usario ? como jquery en el html, y que 
        <% } %>
       </ul>
       <strong>$TOTAL PRICE</strong>
+      <br>
+      <p>Ready ?</p>
+      <button type="submit">Place your order</button>
     </aside>
     <!-- End Price -->
 
 
+<!--     
+      <div class="card-divider">
+        Abby the Cat
+      </div>
+      <img src="https://placeimg.com/640/480/animals">
+      <div class="card-section">
+        <h5>I need a new home!</h5>
+        <p>Abby loves long naps in the sun, the laser game, and low-fat milk. She is also a great bug exterminator!</p>
+      </div> -->
+      
+    
+    
+    
+      
     <div class="meal-container">
+    
       <% meals.forEach(function(meal){%>
+        <div class="card-select" data-cardSelect>
         <div class="meal">
           <img class="meal-img"  style="border-radius: 5%;" src = <%=meal.image%> >
           <p id="meal-name"><%=meal.name%></p>
           <p id="meal-description"><%=meal.description%></p>
+        
         </div>
-      <%})%>
+        <button class="button" data-cardSelectButton></button>
       </div>
+      <%})%>
+      
+      </div>
+      
+   
       <br>
       <br>
 
-<div class="card-columns">
+<!-- <div class="card-columns">
   <div class="card">
     <img class="card-img-top" src="..." alt="Card image cap">
     <div class="card-body">
@@ -102,4 +127,4 @@ Como agregar el historical de pedido del usario ? como jquery en el html, y que 
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-</div>
+</div> -->
