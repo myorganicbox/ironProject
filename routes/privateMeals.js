@@ -6,8 +6,13 @@ const Meal= require("../models/Meal");
 
 
 // Private Meal Page access
-router.get("/", ensureLogin.ensureLoggedIn(), (req, res) => { Meal.find({}, (err, meals)=>{
-  res.render("privateMeals", { user: req.user, meals });
+router.get("/", ensureLogin.ensureLoggedIn(), (req, res) => { 
+  Meal.find({}, (err, meals)=>{
+  res.render("privateMeals", { 
+    user: req.user, 
+    meals,
+    andrea:req.query
+  });
 })
   });
 

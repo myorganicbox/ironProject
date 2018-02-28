@@ -14,14 +14,13 @@ Como agregar el historical de pedido del usario ? como jquery en el html, y que 
     <!-- Price -->
     <aside class="meal-price">
       <h2>Your Veggie Box</h2>
+      <h3><%=andrea.box%></h3>
 
       <b>Selected Meals:</b>
       <ul>
-        <li>Meal 1</li>
-        <li>Meal 2</li>
-        <li>Meal 3</li>
-        <li>Meal 4</li>
-        <li>Meal 5</li>
+       <% for(i=1;i<=andrea.quantity;i++){ %>
+          <li>Meal <%=i%></li>
+       <% } %>
       </ul>
       <strong>$TOTAL PRICE</strong>
     </aside>
