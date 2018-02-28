@@ -115,10 +115,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //middleware to set the user in the template
-app.use(function(req,res,next){
-  res.local.user = req.user;
-  next()
-})
+// app.use(function(req,res,next){
+//   res.local.user = req.user;
+//   next()
+// })
 
 
 // default value for title local
