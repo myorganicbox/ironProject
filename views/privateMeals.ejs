@@ -12,7 +12,7 @@ Como agregar el historical de pedido del usario ? como jquery en el html, y que 
 
 
     <!-- Price -->
-    <aside class="panel price">
+    <aside class="meal-price">
       <h2>Your Veggie Box</h2>
 
       <b>Selected Meals:</b>
@@ -31,10 +31,9 @@ Como agregar el historical de pedido del usario ? como jquery en el html, y que 
     <div class="meal-container">
       <% meals.forEach(function(meal){%>
         <div class="meal">
+          <img class="meal-img"  style="border-radius: 5%;" src = <%=meal.image%> >
           <p id="meal-name"><%=meal.name%></p>
-          
-          <img src = <%=meal.image%>>
-          <p><%=meal.description%></p>
+          <p id="meal-description"><%=meal.description%></p>
         </div>
       <%})%>
       </div>
