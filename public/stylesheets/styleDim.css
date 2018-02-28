@@ -1,0 +1,17 @@
+
+.card-columns{
+    display: inline-block;
+}
+
+.meal-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.meal{
+    width: 25%;
+}
+
+.meal img{
+    width: 100%;
+}
