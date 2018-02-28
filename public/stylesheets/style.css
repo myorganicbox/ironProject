@@ -3,7 +3,12 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: aliceblue;
+}
+
+.navbarlayout{
+ padding-left: 400px;
+ background-color: aliceblue;
 }
 
 .layoutLoginButton{
@@ -11,8 +16,10 @@ a {
 }
 
 #layoutlogo{
+  display: inline-flex;
   height: 100px;
   width: 100px;
+  
 }
 
 h1{
@@ -30,4 +37,8 @@ padding: 70px;
 
   display: inline-block;
 
+}
+
+.btn-default{
+  background-color: aliceblue; 
 }
