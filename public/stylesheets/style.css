@@ -29,16 +29,39 @@ h1{
 }
 
 .card{
-  display: inline-block;
-padding: 70px;
+background-color: rgb(207, 240, 20);
+display: inline-block; 
+height: 450px;
 }
 
-.boxtypes{
-
-  display: inline-block;
+.container2{
+  display: flex;
+  margin-left:50px;
+  
 
 }
-
 .btn-default{
   background-color: aliceblue; 
+}
+
+.typeboxes{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 100px;
+ background-color: rgba(207, 240, 20, 0.459);
+ text-align: center;
+}
+
+.typeboxes select{
+  display: flex;
+  margin-top: 10px; 
+  align-items: baseline; 
+}
+
+.submit{
+  display: flex;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color:rgba(139, 145, 110);
 }
