@@ -38,3 +38,7 @@ padding: 70px;
   display: inline-block;
 
 }
+
+.btn-default{
+  background-color: aliceblue; 
+}
