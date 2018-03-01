@@ -4,7 +4,7 @@ const Contact = require("../models/Contact");
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  res.render('contactus');
+  res.render('contactus',{message:null});
 });
 router.post("/", (req,res,next)=>{
   const name = req.body.name,
@@ -24,7 +24,7 @@ router.post("/", (req,res,next)=>{
      });
 console.log(newContact)
      newContact.save()
-      .then(()=>res.redirect('/'),
+      .then(()=>res.render('contactus', {message:"Hecho "}),
       console.log("done"))
      .catch(err => console.log(err))
 
