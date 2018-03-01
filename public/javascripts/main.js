@@ -13,10 +13,14 @@ $('[data-cardSelectButton]').click(function() {
     console.log(b)
     let c = $("#quantityAnd").html()
 
-
-    if(selected.length < c ){
+if (iD.hasClass("is-selected")){
+  if(selected.length < c ){
     selected.push(b);
   }
+} else {
+  selected.splice(selected.indexOf(b),1)
+}
+   
 
     // for(i=1;i<=andrea.quantity;i++){ 
     //   Meal  = i; 
