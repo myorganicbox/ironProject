@@ -109,4 +109,5 @@ const meals = [
 Meal.create(meals, function(err, result){
     if(err) console.log("no guardado");
     console.log("lo lograste!", result);
+    mongoose.connection.close()
 });

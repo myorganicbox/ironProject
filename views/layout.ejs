@@ -43,15 +43,23 @@
         </ul>
 
       </div>    
-      <div class="buttonslayout">         
+      <div class="buttonslayout"> 
+          <% if(typeof user !== "undefined"){%>
+
+            <a href="/logout">
+                <button class="btn btn-outline-success" href="/logout" type="logout">Logout</button>
+              </a>
+        
+            <% } else { %>   
+
         <a href="/login">
           <button class="btn btn-outline-success" href="/login" type="login">Login</button>
         </a>
 
         <a href="/signup">
-          <button class="btn btn-outline-success" href="/signup" type="Singup">Sign up</button>
+          <button class="btn btn-outline-success" href="/signup" type="Signup">Sign up</button>
         </a>
-
+<% } %>
       </div> 
 
   

@@ -16,13 +16,15 @@ Agregar el historical de pedido del usario !!! + bouton para ver private profile
       <h2>Your Veggie Box</h2>
       <h3><%=andrea.box%></h3>
 
+      <p id="quantityAnd"><%=andrea.quantity%></p>
+      
       <b>Selected Meals:</b>
-      <ul>
+      <ul id="ulMeal">
        <% for(i=1;i<=andrea.quantity;i++){ %>
-          <li>Meal <%=i%></li>
+          <li >Meal <%= i %>:</li>
        <% } %>
       </ul>
-      <strong>$TOTAL PRICE</strong>
+      <p id="totalPrice"><strong>$TOTAL PRICE</strong></p> 
       <br>
       <p>Ready ?</p>
       <button type="submit">Place your order</button>
