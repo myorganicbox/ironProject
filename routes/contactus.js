@@ -24,7 +24,8 @@ router.post("/", (req,res,next)=>{
      });
 console.log(newContact)
      newContact.save()
-      .then(()=>console.log("done"))
+      .then(()=>res.redirect('/'),
+      console.log("done"))
      .catch(err => console.log(err))
 
 });
