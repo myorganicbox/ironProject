@@ -5,7 +5,8 @@ const Schema = mongoose.Schema;
 const mealSchema = new Schema({
     name: {type: String},
     description: {type: String},
-    image: {type: String}
+    image: {type: String},
+    price: {type: Number}
 });
 
 
