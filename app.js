@@ -7,6 +7,7 @@ const bodyParser   = require('body-parser');
 const layouts      = require('express-ejs-layouts');
 const mongoose     = require('mongoose');
 const passport = require("passport");
+const GoogleStrategy = require("passport-google-oauth").OAuth2Strategy;
 const app = express();
 require("dotenv");
 
@@ -60,6 +61,34 @@ passport.use(new FbStrategy({
 
 }));
 
+
+//Google
+passport.use(new GoogleStrategy({
+  clientID: "698360357894-57s0bm2o6ffgppafvrp2m9vojllmqtk1.apps.googleusercontent.com",
+  clientSecret: "xFBmHkB3e_Rit4-mK_taRd4w",
+  callbackURL: "/auth/google/callback"
+}, (accessToken, refreshToken, profile, done) => {
+  User.findOne({ googleID: profile.id }, (err, user) => {
+    if (err) {
+      return done(err);
+    }
+    if (user) {
+      return done(null, user);
+    }
+
+    const newUser = new User({
+      googleID: profile.id
+    });
+
+    newUser.save((err) => {
+      if (err) {
+        return done(err);
+      }
+      done(null, newUser);
+    });
+  });
+
+}));
 
 
 // P A S S P O R T 
