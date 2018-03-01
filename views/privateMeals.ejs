@@ -1,5 +1,5 @@
-
-<h2>Private Meals page</h2>
+<h2>
+  Private Meals page</h2>
 
 Agregar el historical de pedido del usario !!! + bouton para ver private profile + edit profile
 
@@ -8,52 +8,82 @@ Agregar el historical de pedido del usario !!! + bouton para ver private profile
   <div>
     <a href="/">Index</a>
   </div>
-<% } %>
+  <% } %>
 
 
     <!-- Price -->
     <aside class="meal-price">
       <h2>Your Veggie Box</h2>
-      <h3><%=andrea.box%></h3>
+      <h3>
+        <%=andrea.box%>
+      </h3>
 
-      <p id="quantityAnd"><%=andrea.quantity%></p>
-      
+      <p id="quantityAnd">
+        <%=andrea.quantity%>
+      </p>
+
       <b>Selected Meals:</b>
       <ul id="ulMeal">
-       <% for(i=1;i<=andrea.quantity;i++){ %>
-          <li >Meal <%= i %>:</li>
-       <% } %>
+        <% for(i=1;i<=andrea.quantity;i++){ %>
+          <li>Meal
+            <%= i %>:</li>
+          <% } %>
       </ul>
-      <p id="totalPrice"><strong>$TOTAL PRICE</strong></p> 
+      <p id="totalPrice">
+        <strong>$TOTAL PRICE</strong>
+      </p>
       <br>
-      <p>Ready ?</p>
-      <button type="submit">Place your order</button>
+      <% if(andrea.box == "Single Box" && andrea.quantity == 3){%>
+        <p> $ 225</p>
+        <% } else if(andrea.box == "Single Box" && andrea.quantity == 5){%>
+          <p> $ 375</p>
+          <% } else if(andrea.box == "Single Box" && andrea.quantity == 7){%>
+            <p> $ 525</p>
+            <% } else if(andrea.box == "Couple Box" && andrea.quantity == 3){%>
+              <p> $ 375</p>
+              <% } else if(andrea.box == "Couple Box" && andrea.quantity == 5){%>
+                <p> $ 625</p>
+                <% } else if(andrea.box == "Couple Box" && andrea.quantity == 7){%>
+                  <p> $ 875</p>
+                  <% } else if(andrea.box == "Family Box" && andrea.quantity == 3){%>
+                    <p> $ 675</p>
+                    <% } else if(andrea.box == "Family Box" && andrea.quantity == 5){%>
+                      <p> $ 1125</p>
+                      <% } else if(andrea.box == "Family Box" && andrea.quantity == 7){%>
+                        <p> $ 1575</p>
+                        <% } %>
+                          <p>Ready ?</p>
+                          <button type="submit">Place your order</button>
     </aside>
     <!-- End Price -->
 
-    
-      
+
+
     <div class="meal-container">
-    
+
       <% meals.forEach(function(meal){%>
         <div class="card-select" data-cardSelect>
-        <div class="meal">
-          <img class="meal-img"  style="border-radius: 5%;" src = <%=meal.image%> >
-          <p id="meal-name"><%=meal.name%></p>
-          <p id="meal-description"><%=meal.description%></p>
-        
-        </div>
-        <button class="button" data-cardSelectButton></button>
-      </div>
-      <%})%>
-      
-      </div>
-      
-   
-      <br>
-      <br>
+          <div class="meal">
+            <img class="meal-img" style="border-radius: 5%;" src=<%=meal.image%> >
+            <p id="meal-name">
+              <%=meal.name%>
+            </p>
+            <p id="meal-description">
+              <%=meal.description%>
+            </p>
 
-<!-- <div class="card-columns">
+          </div>
+          <button class="button" data-cardSelectButton></button>
+        </div>
+        <%})%>
+
+    </div>
+
+
+    <br>
+    <br>
+
+    <!-- <div class="card-columns">
   <div class="card">
     <img class="card-img-top" src="..." alt="Card image cap">
     <div class="card-body">

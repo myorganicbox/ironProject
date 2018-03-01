@@ -20,50 +20,39 @@
       </ul>
 
 
-<form action="/profile/<%= user._id%> /edit-my-profile" method="POST" id="form-container">
+<form action="/user/edit" method="POST" id="form-container">
 
-    <% user.forEach((user) => { %>
+  
 
 
-    <label for="username">My current username</label>
-    <input type="text" name="username" value="<%= user.username %>">
+    <label for="username" name="username">My username: <b><%= user.username %></b></label>
+  <br>
 
-  <label for="newusername">My new Username</label>
+  <label for="newusername">New username:</label>
   <input id="newusername" type="text" name="newusername" placeholder="new username">
   <br><br>
   
-  <label for="email">My current email</label>
-  <input type="text" name="email" value="<%= user.email %>">
-
-  <label for="newemail">My new Email</label>
+  <label for="email" name="email">My email: <b><%= user.email %></b></label>
+  <br>  
+  <label for="newemail">Change my email</label>
   <input id="newemail" type="text" name="newemail" placeholder="new email:">
   <br><br>
 
   
-  <label for="address">My current Address</label>
-  <input type="text" name="address" value="<%= user.address %>">
+  <label for="address" name="address">My address: <b><%= user.address %></b></label>
+  <br>  
 
-  <label for="newaddress">My new Address</label>
+  <label for="newaddress">My new address</label>
   <input id="newaddress" type="text" name="newaddress" placeholder="new address:">  
   <br><br>
 
-  <%  }) %>
-
-  <label for="newpassword">Change my Password</label>
-  <input id="newpassword" type="password" name="newpassword" placeholder="new password:">
-  <br><br>
-  <label for="newpassword2">Confirm your Password</label>
-  <input id="newpassword2" type="password" name="newpassword2" placeholder="password:">
 
   <% if (typeof message !== "undefined") { %>
     <div class="error-message"><%= message %></div>
   <% } %>
   <br><br>
 
-  <button>Create account</button>
+  <button>Update my account</button>
 
-  <p class="account-message">
-    Do you already have an account?
-    <a href="/login">Login</a>
-  </p>
+  
 </form>

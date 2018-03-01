@@ -5,6 +5,7 @@ var selected = [];
 
 
 $('[data-cardSelectButton]').click(function() {
+  
     $(this).parent('[data-cardSelect]').toggleClass('is-selected');
     let iD = $(this).parent()
     console.log(iD)
