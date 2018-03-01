@@ -1,5 +1,6 @@
 body {
   font-family: 'Inconsolata', monospace;
+  background-color: aliceblue;
   
 }
 
@@ -9,9 +10,13 @@ a {
 
 .navbarlayout{
  padding-left: 400px;
- background-color: aliceblue;
+ background-color: rgb(222, 235, 247);
  height: 100px;
  font-size: 1.5em;
+}
+
+#contactus{
+  padding:0 25px;
 }
 
 #layoutlogo{
@@ -26,10 +31,11 @@ h1{
   padding-left: 500px;
   padding-bottom: 30px;
   padding-top:30px;
+  background-color: white;
 }
 
 .card{
-background-color: rgb(207, 240, 20);
+background-color: rgba(252, 154, 50, 0.5);
 display: inline-block; 
 height: 450px;
 }
@@ -41,7 +47,8 @@ height: 450px;
 
 }
 .btn-default{
-  background-color: aliceblue; 
+  background-color: rgba(245, 235, 235, 0.63);
+  border: 3px; 
 }
 
 .typeboxes{
@@ -49,7 +56,7 @@ height: 450px;
   flex-direction: row;
   justify-content: space-around;
   padding-left: 100px;
- background-color: rgba(207, 240, 20, 0.459);
+ background-color: rgba(228, 248, 116, 0.322);
  text-align: center;
 }
 
@@ -85,7 +92,40 @@ height: 450px;
 }
 
 .page-footer{
-  background-color: rgb(250, 208, 91)
+  background-color: rgb(250, 208, 91);
+  height: 150px;
+}
+.pb-3{
+  height: 1em;
 }
 
------hola
+.ic{
+  color: black;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  padding-top: 45px;
+}
+
+.container-fluid{
+  padding-top:90px;
+}
+
+.carousel-inner>.item>img{
+  display: block;
+  height: auto;
+  max-width: 100%;
+  line-height: 1;
+  width: 100%;
+}
+
+.carousel-inner>.item>a>img {
+  display: block;
+  height: auto;
+  max-width: 90%;
+  line-height: 1;
+  width: 100%;
+}
