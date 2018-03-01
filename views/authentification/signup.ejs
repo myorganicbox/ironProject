@@ -1,123 +1,45 @@
 
-<h2>Signup</h2>
-
+   <h2>SIGN UP</h2>
 <form action="/signup" method="POST" id="form-container">
-<div class="container">
-  <div class="row main">
-    <div class="main-login main-center">
-    
-      <form class="" method="post" action="#">
-        
-        <div class="form-group">
-          <label for="name" class="cols-sm-2 control-label">My Username</label>
-          <div class="cols-sm-10">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-              <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
-            </div>
-          </div>
-        </div>
+<div id="form-container">
 
-        <div class="form-group">
-          <label for="email" class="cols-sm-2 control-label">My Email</label>
-          <div class="cols-sm-10">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-              <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="username" class="cols-sm-2 control-label">My Address</label>
-          <div class="cols-sm-10">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-              <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="password" class="cols-sm-2 control-label"> My Password</label>
-          <div class="cols-sm-10">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-              <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="confirm" class="cols-sm-2 control-label">Confirm my Password</label>
-          <div class="cols-sm-10">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-              <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
-
-              <% if (typeof message !== "undefined") { %>
-                <div class="error-message"><%= message %></div>
-              <% } %>
-              <br><br>
-
-              <a href="/auth/google">Login with Google</a>
-
-  <p class="account-message">
-    Do you already have an account?
-    <a href="/login">Login</a>
-  </p>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group ">
-          <a href="/login" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
-        </div>
-        <a href="/auth/google">Login with Google</a>
-
-  <p class="account-message">
-    Do you already have an account?
-    <a href="/login">Login</a>
-  </p>
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- <form action="/signup" method="POST" id="form-container">
   <label for="username">My Username</label>
-  <input id="username" type="text" name="username" placeholder="Your Name:">
-  <br><br>
+  <input id="usernamesignup" type="text" name="username" placeholder="Your Name">
+
   
   <label for="email">My Email</label>
-  <input id="email" type="text" name="email" placeholder="Your Email:">
+  <input id="email" type="text-" name="email" placeholder="Your Email">
   <br><br>
 
-   
   <label for="address">My Address</label>
-  <input id="address" type="text" name="address" placeholder="Your Address:">  
+  <input id="address" type="text" name="address" placeholder="Your Address">  
   <br><br>
-
-
 
   <label for="password">My Password</label>
-  <input id="password" type="password" name="password" placeholder="Your password:">
-  <br><br>
+  <input id="password" type="password" name="password" placeholder="Your password">
+  
   <label for="password2">Confirm my Password</label>
-  <input id="password2" type="password" name="password2" placeholder="Confirm your password:">
+  <input id="password2" type="password" name="password2" placeholder="Confirm password">
 
   <% if (typeof message !== "undefined") { %>
-    <div class="error-message"><%= message %></div>
+  <div class="error-message"><%= message %></div>
   <% } %>
   <br><br>
 
-  <button>Create account</button>
+</div>
 
-  <a href="/auth/google">Login with Google</a>
+  <button class="createaccount">Create account</button>
+  <br>
+  <label class="checkbox">
+    <input type="checkbox">
+    I agree to the <a href="#">terms and conditions</a>
+  </label>
+
 
   <p class="account-message">
-    Do you already have an account?
-    <a href="/login">Login</a>
+  Do you already have an account?
+  <a href="/login">Login </a> or
   </p>
-</form> -->
+
+  <a href="/auth/google">Login with Google</a>
+</form>
