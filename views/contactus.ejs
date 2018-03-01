@@ -1,59 +1,55 @@
+<section id="contact">
+    <div class="container">
+        <div class="well well-sm">
 
+            <hr>
 
-     <section id="contact">
-      <div class="container">
-      <div class="well well-sm">
+        </div>
 
-     <hr>
-       
-      </div>
-      
-      <div class="row">
-     <div class="col-md-7">
-        <iframe
-        width="600"
-        height="450"
-        frameborder="0" style="border:0"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBtj1qK16lu4CHPO0ssREXQLTepH5lmlZ0
+        <div class="row">
+            <div class="col-md-7">
+                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBtj1qK16lu4CHPO0ssREXQLTepH5lmlZ0
           &q=WeWork+Insurgentes+Sur+601" allowfullscreen>
-      </iframe>
-     </div>
-   
-  
-     <div class="col-md-5">
-            <h4><strong>Get in Touch</strong></h4>
+                </iframe>
+            </div>
 
 
-        <form action="/contactus" method="POST">
-        <div class="form-group">
-        <input type="text" class="form-control" name="" value="" placeholder="Name">
-        </div>
-            
-        <div class="form-group">
-        <input type="email" class="form-control" name="" value="" placeholder="E-mail">
-        </div>
-        
-        <div class="form-group">
-        <input type="tel" class="form-control" name="" value="" placeholder="Phone">
-        </div>
+            <div class="col-md-5">
+                <h4>
+                    <strong>Get in Touch</strong>
+                </h4>
 
-        <div class="form-group">
-        <textarea class="form-control" name="" rows="3" placeholder="Message"></textarea>
-        </div>
 
-        <button class="btn btn-default" type="submit" name="button">
-        <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit
-        </button>
-        </form>
+                <form action="/contactus" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" value="" placeholder="Name">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" value="" placeholder="E-mail">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" class="form-control" name="phone" value="" placeholder="Phone">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
+                    </div>
+
+                    <button class="btn btn-default" type="submit" name="button">
+                        <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit
+                    </button>
+                </form>
+            </div>
         </div>
-</div>
 </section>
-            <script>
-            window.onload = function() {
+<script>
+    window.onload = function () {
 
-            $(".button").on("click", function(){
-console.log("entre")
-            })
-  
-             };
-            </script>
+        $(".button").on("click", function () {
+            console.log("entre")
+        })
+
+    };
+</script>
