@@ -40,9 +40,15 @@ display: inline-block;
 height: 450px;
 }
 
+#testUn{
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;;
+  
+}
+
 .container2{
   display: flex;
-  margin-left:50px;
+  justify-content: center;
+  
   
 
 }
@@ -54,6 +60,7 @@ height: 450px;
 .typeboxes{
   display:flex;
   flex-direction: row;
+  align-items: center !important;
   justify-content: space-around;
   padding-left: 100px;
  background-color: rgba(228, 248, 116, 0.322);
@@ -84,12 +91,22 @@ height: 450px;
   padding-top:40px;  
 }
 
+#maintitle{
+  font-size: 3em;
+}
+
 .buttonslayout{
 
   display: flex;
   padding-left: 600px;
   margin-top: -50px;
 }
+
+
+.colayout{
+  padding:10px 20px;
+}
+
 
 .page-footer{
   background-color: rgb(250, 208, 91);

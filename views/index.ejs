@@ -1,4 +1,4 @@
-<h1><%= title %></h1>
+<h1 id="maintitle"><%= title %></h1>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -30,7 +30,7 @@
 </div>
    
   </div>
-      <div class="container2">
+      <div class="container2" id"containerFlujo">
 
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="../images/flujo.png" alt="Card image cap">
@@ -69,9 +69,9 @@
 <div class= "typeboxes">
               <form action="/privateMeals">
                 <h3>Single Box</h3>
-                <img class=“card-img-top” width="320px" src="../images/veggiebox.jpg" alt=“Card image cap”>
+                <img id="testUn" class=“imgboxes card-img-top” width="320px" src="../images/veggieboxtest.png" alt=“Card image cap”>
                 <input type="hidden" name="box" value="Single Box">
-                <select name="quantity">
+                <p>Meals:</p> <select name="quantity">
                   <option default value="3">3</option>
                   <option value="5">5</option>
                   <option value="7">7</option>
@@ -82,8 +82,9 @@
 
               <form action="/privateMeals">
                 <h3>Couple Box</h3>
-                <img class=“card-img-top” width="320px" src="../images/veggiebox.jpg" alt=“Card image cap”>
+                <img id="testUn" class=“card-img-top” width="320px" src="../images/veggiebox.jpg" alt=“Card image cap”>
                 <input type="hidden" name="box" value="Couple Box">
+                <p>Meals:</p>
                 <select name="quantity">
                   <option default value="3">3</option>
                   <option value="5">5</option>
@@ -94,8 +95,9 @@
 
               <form action="/privateMeals">
                 <h3>Family Box</h3>
-                <img class=“card-img-top” width="320px" src="../images/veggiebox.jpg" alt=“Card image cap”>
+                <img id="testUn" class=“card-img-top” width="320px" src="../images/veggiebasket1.jpg" alt=“Card image cap”>
                 <input type="hidden" name="box" value="Family Box">
+                <p>Meals:</p>
                 <select name="quantity">
                   <option default value="3">3</option>
                   <option value="5">5</option>
