@@ -35,7 +35,7 @@
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="../images/flujo.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">We Plan</h5>
+            <h5 class="card-title">  We Plan</h5>
             <p class="card-text">We plan your meals each week with a variety of healthy recipes.</p>
           </div>
         </div>
@@ -64,47 +64,66 @@
                 </div>
               </div>
       </div>
+
+      <h2>Choose your kind of Veggie Box</h2>
               <hr>
 
 <div class= "typeboxes">
               <form action="/privateMeals">
                 <h3>Single Box</h3>
-                <img id="testUn" class=“imgboxes card-img-top” width="320px" src="../images/veggieboxtest.png" alt=“Card image cap”>
+                <img id="testUn" class=“imgboxes card-img-top” width="320px" height="250px" src="../images/veggieboxtest.png" alt=“Card image cap”>
                 <input type="hidden" name="box" value="Single Box">
-                <p>Meals:</p> <select name="quantity">
-                  <option default value="3">3</option>
+                <p>One person
+                  <br> <i> better alone than in bad company! </i> </p> <select name="quantity" class="custom-select">
+                      <option>Choose how many meals you want</option>
+                  <option value="3">3</option>
                   <option value="5">5</option>
                   <option value="7">7</option>
                 </select>
-              <input id ="singleSubmit" class="submit" type="submit" value="submit">
+              <input id ="singleSubmit" class="submit" type="submit" value="Let's Go">
               </form>
 
+<!-- 
+              <select class="custom-select">
+                  <option>Choose something...</option>
+                  <option>Lachs-Carpaccio</option>
+                  <option>Pizza</option>
+                </select> -->
 
-              <form action="/privateMeals">
+
+
+
+              <form  id="formTwo" action="/privateMeals" >
                 <h3>Couple Box</h3>
-                <img id="testUn" class=“card-img-top” width="320px" src="../images/veggiebox.jpg" alt=“Card image cap”>
+                <img id="testUn" class=“card-img-top” width="320px" height="250px" src="../images/veggiebox.jpg" alt=“Card image cap”>
                 <input type="hidden" name="box" value="Couple Box">
-                <p>Meals:</p>
-                <select name="quantity">
-                  <option default value="3">3</option>
+                <p>Two lovers <br> . </p>
+                <select name="quantity" class="custom-select">
+                    <option>Choose how many meals you want</option>
+                  <option  value="3">3</option>
                   <option value="5">5</option>
                   <option value="7">7</option>
                 </select>
-              <input id ="coupleSubmit" class="submit" type="submit" value="submit">
+                <input id ="singleSubmit" class="submit" type="submit" value="Let's Go">
               </form>
 
               <form action="/privateMeals">
                 <h3>Family Box</h3>
-                <img id="testUn" class=“card-img-top” width="320px" src="../images/veggiebasket1.jpg" alt=“Card image cap”>
+                <img id="testUn" class=“card-img-top” width="320px"  height="250px" src="../images/veggiebasket1.jpg" alt=“Card image cap”>
                 <input type="hidden" name="box" value="Family Box">
-                <p>Meals:</p>
-                <select name="quantity">
-                  <option default value="3">3</option>
+                <p>Four persons
+                  <br>
+                  Cats and dogs are not included
+                </p>
+                
+                <select name="quantity" class="custom-select">
+                    <option>Choose how many meals you want</option>
+                  <option  value="3">3</option>
                   <option value="5">5</option>
                   <option value="7">7</option>
                 </select>
 
-              <input id ="familySubmit" class="submit" type="submit" value="submit">
+                <input id ="singleSubmit" class="submit" type="submit" value="Let's Go">
 
               </form>
 

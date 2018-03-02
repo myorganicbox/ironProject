@@ -1,7 +1,5 @@
 <h2>
-  Private Meals page</h2>
-
-Agregar el historical de pedido del usario !!! + bouton para ver private profile + edit profile
+  Our March recipes fresh selection</h2>
 
 
 <% if (user) { %>
@@ -14,14 +12,16 @@ Agregar el historical de pedido del usario !!! + bouton para ver private profile
     <!-- Price -->
     <aside class="meal-price">
       <h2>Your Veggie Box</h2>
-      <h3>
+      <h3 id="htrois">
         <%=andrea.box%>
       </h3>
 
-      <p id="quantityAnd">
+      <div class="priceglobalclass">
+<span>Meals content: </span>
+        <p id="quantityAnd"> 
         <%=andrea.quantity%>
-      </p>
-
+      </p> 
+   
       <b>Selected Meals:</b>
       <ul id="ulMeal">
         <% for(i=1;i<=andrea.quantity;i++){ %>
@@ -32,8 +32,7 @@ Agregar el historical de pedido del usario !!! + bouton para ver private profile
       <p id="totalPrice">
         <strong>$TOTAL PRICE</strong>
       </p>
-      <br>
-      
+      <div class="totalpriceclass">
      <!-- <% var price %> -->
       <% if(andrea.box == "Single Box" && andrea.quantity == 3){%>
         <% price = "$ 225"%><p>$ 225</p>
@@ -54,9 +53,11 @@ Agregar el historical de pedido del usario !!! + bouton para ver private profile
                       <% } else if(andrea.box == "Family Box" && andrea.quantity == 7){%>
                         <% price = "$ 1575"%><p> $ 1575</p>
                         <% } %>
+                      </div>
                           <p>Ready ?</p>
-                          <a href="/checkout?box=<%=andrea.box%>&quantity=<%=andrea.quantity%>&price=<%=price%>"> <button type="submit">Place your order</button>  </a> 
+                          <a href="/checkout?box=<%=andrea.box%>&quantity=<%=andrea.quantity%>&price=<%=price%>"> <button class="butt" type="submit">Place your order</button>  </a> 
     </aside>
+  </div>
     <!-- End Price -->
 
 
@@ -82,8 +83,6 @@ Agregar el historical de pedido del usario !!! + bouton para ver private profile
     </div>
 
 
-    <br>
-    <br>
 
     <!-- <div class="card-columns">
   <div class="card">

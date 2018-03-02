@@ -42,19 +42,48 @@ height: 450px;
 
 #testUn{
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset !important;;
+  border-radius: 6px;
   
 }
 
 .container2{
   display: flex;
   justify-content: center;
-  
-  
-
+  align-items: center;
 }
+
+.container2 h5{
+  font-weight: bold;
+  text-align: center;
+}
+
+.container2 p{
+  text-align: center;
+}
+
+.container2 .card-body{
+  width: 286px !important;
+  height: 148px !important;
+}
+
+.container2 .card-img-top{
+  width: 286px !important;
+  height: 286px !important;
+}
+
+.container2 .card{
+  margin: 5px;
+}
+
 .btn-default{
   background-color: rgba(245, 235, 235, 0.63);
   border: 3px; 
+}
+
+#formTwo{
+  width:320px;
+    height:416px; 
+    margin-bottom: 40px;
 }
 
 .typeboxes{
@@ -62,7 +91,6 @@ height: 450px;
   flex-direction: row;
   align-items: center !important;
   justify-content: space-around;
-  padding-left: 100px;
  background-color: rgba(228, 248, 116, 0.322);
  text-align: center;
 }
@@ -96,12 +124,14 @@ height: 450px;
 }
 
 .buttonslayout{
-
   display: flex;
   padding-left: 600px;
   margin-top: -50px;
 }
 
+.btn-outline-success{
+  margin: 5px;
+}
 
 .colayout{
   padding:10px 20px;
@@ -181,7 +211,7 @@ height: 450px;
 
 h2{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 #menu li
