@@ -184,4 +184,18 @@ h2{
   margin-top: 10px;
 }
 
+#menu li
+{
+    display: flex;
+    padding:30px;
+    color: black;
+  
+}
 
+#menu li img
+{
+    display: flex;
+    box-shadow: 2px 2px 5px rgb(119, 118, 118);
+   
+   
+}
