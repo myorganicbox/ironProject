@@ -12,9 +12,9 @@
 
 <h3>My previous orders:</h3>
 <ul>
-        <% baskets.forEach((basket) => { %>
+        <% user.orders.forEach((basket) => { %>
           <li>
-            <%= basket.name %> - <%= basket.quantity %> meals per week - $<%= basket.price %>
+            <%= basket.box %> - <%= basket.quantity %> meals per week - $<%= basket.price %>
           </li>
         <%  }) %>
       </ul>

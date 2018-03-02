@@ -8,7 +8,7 @@ const salt = bcrypt.genSaltSync(10);  // const bcryptSalt = 10 diferencia ??
 const passport = require("passport");
 
 //ensureLogin
-const ensureLogin = require("connect-ensure-login");
+const { ensureLoggedIn, ensureLoggedOut } = require('connect-ensure-login');
 
 
 //facebook login
@@ -95,7 +95,7 @@ console.log(newUser)
 
 
   // Cart Access
-router.get("/my-cart", ensureLogin.ensureLoggedIn(), (req, res) => {
+router.get("/my-cart", ensureLoggedIn(), (req, res) => {
     res.render("cart", { user: req.user });
   });
 

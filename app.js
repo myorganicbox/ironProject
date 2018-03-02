@@ -173,6 +173,7 @@ app.locals.title = 'My Veggie Box';
   const privateMeals = require('./routes/privateMeals');
   const contactus= require('./routes/contactus');
   const publicmeals= require('./routes/publicmeals');
+  const checkouts = require('./routes/checkout');
   
 
 
@@ -185,6 +186,7 @@ app.locals.title = 'My Veggie Box';
   app.use("/privateMeals", privateMeals);
   app.use("/contactus", contactus);
   app.use("/publicmeals", publicmeals);
+  app.use("/checkout", checkouts);
 
 
 

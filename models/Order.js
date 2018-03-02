@@ -3,9 +3,15 @@ const Schema = mongoose.Schema;
 
 
 const orderSchema = new Schema({
-    owner: {type: Schema.Types.ObjectId, ref: 'User', required: true },
-    content: {type: Schema.Types.ObjectId, ref: 'Basket',required: true},
-    deliveryDate: Date
+    _owner: {type: Schema.Types.ObjectId, ref: 'User' },
+    // content: {type: Schema.Types.ObjectId, ref: 'Basket'},
+    box: {type: String},
+    quantity: {type: String},
+    price: {type: String},
+    meal:[]
+    // deliveryDate: Date
+},
+{  timestamps: { createdAt: "created_at", updatedAt: "updated_at"}
 });
 
 

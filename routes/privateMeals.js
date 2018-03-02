@@ -16,6 +16,12 @@ router.get("/", ensureLogin.ensureLoggedIn(), (req, res) => {
 })
   });
 
+router.post("/", (req, res)=>{
+  User.find({}, (err, order)=>{
+    
+  })
+})
+
 
 
 

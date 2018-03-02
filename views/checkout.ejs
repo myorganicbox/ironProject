@@ -1,6 +1,11 @@
-Hola amigo
-
-<div class="container">
+<div>
+  <p>
+    <%=checkOrder.box%>
+    <%=checkOrder.quantity%>
+    <%=checkOrder.price%>
+  </p>
+</div>
+<div id="bodyPayment" class="container">
     <div class="row">
     <!-- You can make it whatever width you want. I'm making it full width
     on <= small devices and 4/12 page width on >= medium devices -->
@@ -18,7 +23,9 @@ Hola amigo
     </div>                    
     </div>
     <div class="panel-body">
-    <form role="form" id="payment-form">
+
+    <form action="/checkout" role="form" id="payment-form" method="POST">
+
     <div class="row">
     <div class="col-xs-12">
     <div class="form-group">
@@ -83,7 +90,9 @@ Hola amigo
     <p class="payment-errors"></p>
     </div>
     </div>
+
     </form>
+    
     </div>
     </div>            
     <!-- CREDIT CARD FORM ENDS HERE -->

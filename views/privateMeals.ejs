@@ -33,27 +33,29 @@ Agregar el historical de pedido del usario !!! + bouton para ver private profile
         <strong>$TOTAL PRICE</strong>
       </p>
       <br>
+      
+     <!-- <% var price %> -->
       <% if(andrea.box == "Single Box" && andrea.quantity == 3){%>
-        <p> $ 225</p>
+        <% price = "$ 225"%><p>$ 225</p>
         <% } else if(andrea.box == "Single Box" && andrea.quantity == 5){%>
-          <p> $ 375</p>
+          <% price = "$ 375"%><p> $ 375</p>
           <% } else if(andrea.box == "Single Box" && andrea.quantity == 7){%>
-            <p> $ 525</p>
+            <% price = "$ 525"%><p> $ 525</p>
             <% } else if(andrea.box == "Couple Box" && andrea.quantity == 3){%>
-              <p> $ 375</p>
+              <% price = "$ 375"%> <p> $ 375</p>
               <% } else if(andrea.box == "Couple Box" && andrea.quantity == 5){%>
-                <p> $ 625</p>
+                <% price = "$ 625"%> <p> $ 625</p>
                 <% } else if(andrea.box == "Couple Box" && andrea.quantity == 7){%>
-                  <p> $ 875</p>
+                  <% price = "$ 875"%> <p> $ 875</p>
                   <% } else if(andrea.box == "Family Box" && andrea.quantity == 3){%>
-                    <p> $ 675</p>
+                    <% price = "$ 675"%><p> $ 675</p>
                     <% } else if(andrea.box == "Family Box" && andrea.quantity == 5){%>
-                      <p> $ 1125</p>
+                      <% price = "$ 1125"%> <p> $ 1125</p>
                       <% } else if(andrea.box == "Family Box" && andrea.quantity == 7){%>
-                        <p> $ 1575</p>
+                        <% price = "$ 1575"%><p> $ 1575</p>
                         <% } %>
                           <p>Ready ?</p>
-                          <button type="submit">Place your order</button>
+                          <a href="/checkout?box=<%=andrea.box%>&quantity=<%=andrea.quantity%>&price=<%=price%>"> <button type="submit">Place your order</button>  </a> 
     </aside>
     <!-- End Price -->
 
