@@ -123,6 +123,7 @@ height: 450px;
 }
 
 #form-container{
+  padding-top: 30px;
   background-color: rgb(243, 242, 237);
 }
 
