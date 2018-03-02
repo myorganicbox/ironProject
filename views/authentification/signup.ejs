@@ -1,5 +1,68 @@
 
+<div id="login-box">
+    <div class="left">
+       
 <form action="/signup" method="POST" id="form-container">
+ 
+  <h3 id="signuptitle">Sign up</h3>
+  
+  <input id="usernamesignup" type="text" name="username" placeholder="Your Name">
+
+  <input id="emailsignup" type="text" name="email" placeholder="Your Email">
+
+  <input id="addresssignup" type="text" name="address" placeholder="Your Address">  
+
+  <input id="passwordsignup" type="password" name="password" placeholder="Your password">
+  
+  <input id="password2signup" type="password" name="password2" placeholder="Confirm password">
+
+  <button id="signmeup" class="createaccount" name="signup_submit">Sign me up</button>
+  
+</div>
+
+  <% if (typeof message !== "undefined") { %>
+  <div class="error-message"><%= message %></div>
+  <% } %>
+  <br><br>
+
+  <div class="right">
+      <span class="loginwith"><br /></span>
+      
+      <button class="social-signin facebook">Log in with facebook</button>
+      <button class="social-signin twitter">Log in with Twitter</button>
+      <button class="social-signin google">Log in with Google+</button>
+    </div>
+    <div class="or">OR</div>
+
+</div>
+
+  
+  <br>
+  <label class="checkbox">
+    <input type="checkbox">
+    I agree to the <a href="#">terms and conditions</a>
+  </label>
+
+
+  <p class="account-message">
+  Do you already have an account?
+  <a href="/login">Login </a> or
+  </p>
+
+  <a id="loginGoogle" href="/auth/google">Login with Google</a>
+</form>
+</div>
+
+
+
+
+<!-- 
+<div id="login-box">
+    <div class="left">
+       
+<form action="/signup" method="POST" id="form-container">
+ 
+  <h1 id="signuptitle">Sign up</h1>
   <label for="username">My Username</label>
   <input id="usernamesignup" type="text" name="username" placeholder="Your Name">
 
@@ -17,6 +80,9 @@
   
   <label for="password2">Confirm my Password</label>
   <input id="password2" type="password" name="password2" placeholder="Confirm password">
+  <button class="createaccount">Create account</button>
+  <input type="submit" name="signup_submit" value="Sign me up" />
+</div>
 
   <% if (typeof message !== "undefined") { %>
   <div class="error-message"><%= message %></div>
@@ -25,7 +91,7 @@
 
 </div>
 
-  <button class="createaccount">Create account</button>
+  
   <br>
   <label class="checkbox">
     <input type="checkbox">
@@ -40,3 +106,4 @@
 
   <a id="loginGoogle" href="/auth/google">Login with Google</a>
 </form>
+</div> -->

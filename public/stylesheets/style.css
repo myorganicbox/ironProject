@@ -145,7 +145,7 @@ height: 450px;
   text-decoration: underline;
 }
 
-#form-container{
+/* #form-container{
   padding-top: 30px;
   background-color: rgb(243, 242, 237);
 }
@@ -160,8 +160,8 @@ height: 450px;
   background-color: rgb(237, 248, 248);
   border-radius: 10px;
   font-size: auto;
-  color: black;
-}
+  color: black; */
+/* } */
 
 .createaccount a{
   background-color: rgb(247, 244, 239);
